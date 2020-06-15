@@ -1,0 +1,11 @@
+A=100
+B=50
+
+result = A + B
+print(A, "+", B, "=", result)
+result = A - B
+print(A, "-", B, "=", result)
+result = A * B
+print(A, "*", B, "=", result)
+result = A / B
+print(A, "/", B, "=", result)
