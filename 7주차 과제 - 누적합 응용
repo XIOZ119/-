@@ -1,0 +1,37 @@
+import threading
+import time
+
+
+## 클래스 선언 부분 ##
+class RacingSum:
+    sumNumber = 0
+
+    def __init__(self, number):
+        self.sumNumber = number
+
+    ##  합을 구하는 메서드
+
+    def runSum(self):
+        sumStr = 0  # 누적값
+        for i in range(1, self.sumNumber):  # 1부터 self.sumNumber-1까지 1씩 증가
+            sumStr += i
+            # time.sleep(0.1)
+        print("1+2+3+ ...+ %d = %d" % (i, sumStr))
+ㅁ
+
+## 메인 코드 부분 ##
+Sum1 = RacingSum(1001)
+Sum2 = RacingSum(100001)
+Sum3 = RacingSum(10000001)
+
+# 쓰래드 생성 #
+
+th1 = threading.Thread(target=Sum1.runSum())
+th2 = threading.Thread(target=Sum2.runSum())
+th3 = threading.Thread(target=Sum3.runSum())
+
+# 쓰래드 실행 #
+
+th1.start()
+th2.start()
+th3.start()
