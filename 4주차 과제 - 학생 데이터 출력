@@ -1,0 +1,45 @@
+#데이터추가
+
+student1 = {'학과': '컴퓨터학과', '학번' : 1000, '이름' : '홍길동', '국어점수' : 80, '수학점수' : 50, '영어점수' : 90, '총점' : 220,'평균' : 73, '학점' : 'C0' }
+student2 = {'학과': '소프트웨어학과', '학번' : 2000, '이름' : '김철수', '국어점수' : 75, '수학점수' : 81, '영어점수' : 95, '총점' :251, '평균' : 83, '학점' : 'B0'}
+student3 = {'학과': '중어중문학과', '학번' : 1002, '이름' : '이영자', '국어점수' : 50, '수학점수' : 99, '영어점수' : 75, '총점' : 298,'평균' : 74, '학점' : 'C0'}
+student4 = {'학과': '식품공학과', '학번' : 2001, '이름' : '김보라', '국어점수' : 0, '수학점수' : 80, '영어점수' : 77, '총점' : 157, '평균' :78, '학점' : 'C+'}
+student5 = {'학과': '고고미술사학과', '학번' : 1003, '이름' : '김예림', '국어점수' : 95, '수학점수' : 82, '영어점수' : 93, '총점' : 270, '평균' : 90, '학점' : 'A0'}
+
+#데이터검색
+
+print(student1.get('이름'))
+print(student2.get('학번'))
+print(student3.get('이름'))
+print(student4.get('학번'))
+print(student5.get('이름'))
+
+#데이터삭제
+
+del(student1['학번'])
+del(student1['이름'])
+print(student1)
+del(student2['이름'])
+del(student2['학번'])
+print(student2)
+del(student3['이름'])
+del(student3['학번'])
+print(student3)
+del(student4['이름'])
+del(student4['학번'])
+print(student4)
+del(student5['이름'])
+del(student5['학번'])
+print(student5)
+
+#데이터정렬
+
+import operator
+
+trainDic, trainList = {}, []
+
+trainDic = {'컴퓨터학과':'1000', '소프트웨어학과':'2001', '중어중문학과':'1002', '식품공학과':'2002', '고고미술사학과':'1003'}
+trainList = sorted(trainDic.items(), key=operator.itemgetter(1))
+
+print(trainList)
+exit()
