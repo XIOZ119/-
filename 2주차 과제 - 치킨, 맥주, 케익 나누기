@@ -1,0 +1,10 @@
+a = int(input("참석자의 수를 입력하세요 : "))
+b = int(input("치킨의 수 : "))
+c = int(input("맥주의 수 : "))
+d = int(input("케익의 수 :"))
+result = b / a
+print(b, "/", a, "=", result, "마리")
+result = c / a
+print(c, "/", a, "=", result, "캔")
+result = d/ a
+print(d, "/", a, "=", result, "조각")
