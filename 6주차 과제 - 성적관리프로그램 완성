@@ -1,0 +1,110 @@
+
+#A+ = 4.5
+#A0 = 4.0
+#B+ = 3.5
+#B0 = 3.0
+#C+ = 2.5
+#C0 = 2.0
+#D+ = 1.5
+#D0 = 1.0
+#F = 0
+
+class student :
+    학과 = ""
+    학번 = ""
+    이름 = ""
+    국어점수 = ""
+    수학점수 = ""
+    영어점수 = ""
+    총점 = ""
+    평균 = ""
+    학점 = ""
+
+    def up총점(self, value1):
+        self.총점 += value1
+
+    def up평균(self, value2):
+        self.평균 += value2
+
+    def up학점(self, value3):
+        self.학점 += value3
+
+student1 = student()
+student1.학과 = "컴퓨터학과"
+student1.학번 = 1000
+student1.이름 = "홍길동"
+student1.국어점수 = 80
+student1.수학점수 = 50
+student1.영어점수 = 90
+student1.총점 = 0
+student1.평균 = 0
+student1.학점 = 0
+
+student2 = student()
+student2.학과 = "소프트웨어학과"
+student2.학번 = 2000
+student2.이름 = "김철수"
+student2.국어점수 = 75
+student2.수학점수 = 81
+student2.영어점수 = 95
+student2.총점 = 0
+student2.평균 = 0
+student2.학점 = 0
+
+student3 = student()
+student3.학과 = "중어중문학과"
+student3.학번 = 1002
+student3.이름 = "이영자"
+student3.국어점수 = 50
+student3.수학점수 = 99
+student3.영어점수 = 75
+student3.총점 = 0
+student3.평균 = 0
+student3.학점 = 0
+
+student4 = student()
+student4.학과 = "식품공학과"
+student4.학번 = 2001
+student4.이름 = "김보라"
+student4.국어점수 = 0
+student4.수학점수 = 80
+student4.영어점수 = 77
+student4.총점 = 0
+student4.평균 = 0
+student4.학점 = 0
+
+student5 = student()
+student5.학과 = "고고미술사학과"
+student5.학번 = 1003
+student5.이름 = "김예림"
+student5.국어점수 = 95
+student5.수학점수 = 82
+student5.영어점수 = 93
+student5.총점 = 0
+student5.평균 = 0
+student5.학점 = 0
+
+student1.up총점(220)
+student1.up평균(73)
+student1.up학점(2.5)
+print("student1의 학과는 %s이고, 학번은 %d, 이름은 %s, 국어점수는 %d, 수학점수는 %d, 영어점수는 %d, 총점은 %d이고, 평균은 %d이고, 학점은 %3.1f입니다." % (student1.학과, student1.학번, student1.이름, student1.국어점수, student1.수학점수, student1.영어점수, student1.총점, student1.평균, student1.학점))
+
+student2.up총점(251)
+student2.up평균(83)
+student2.up학점(3.0)
+print("student2의 학과는 %s이고, 학번은 %d, 이름은 %s, 국어점수는 %d, 수학점수는 %d, 영어점수는 %d, 총점은 %d이고, 평균은 %d이고, 학점은 %3.1f입니다." % (student2.학과, student2.학번, student2.이름, student2.국어점수, student2.수학점수, student2.영어점수, student2.총점, student2.평균, student2.학점))
+
+student3.up총점(298)
+student3.up평균(157)
+student3.up학점(2.0)
+print("student3의 학과는 %s이고, 학번은 %d, 이름은 %s, 국어점수는 %d, 수학점수는 %d, 영어점수는 %d, 총점은 %d이고, 평균은 %d이고, 학점은 %3.1f입니다." % (student3.학과, student3.학번, student3.이름, student3.국어점수, student3.수학점수, student3.영어점수, student3.총점, student3.평균, student3.학점))
+
+student4.up총점(157)
+student4.up평균(78)
+student4.up학점(2.5)
+print("student4의 학과는 %s이고, 학번은 %d, 이름은 %s, 국어점수는 %d, 수학점수는 %d, 영어점수는 %d, 총점은 %d이고, 평균은 %d이고, 학점은 %3.1f입니다." % (student4.학과, student4.학번, student4.이름, student4.국어점수, student4.수학점수, student4.영어점수, student4.총점, student4.평균, student4.학점))
+
+student5.up총점(270)
+student5.up평균(90)
+student5.up학점(4.0)
+print("student5의 학과는 %s이고, 학번은 %d, 이름은 %s, 국어점수는 %d, 수학점수는 %d, 영어점수는 %d, 총점은 %d이고, 평균은 %d이고, 학점은 %3.1f입니다." % (student5.학과, student5.학번, student5.이름, student5.국어점수, student5.수학점수, student5.영어점수, student5.총점, student5.평균, student5.학점))
